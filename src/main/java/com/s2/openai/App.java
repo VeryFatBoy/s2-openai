@@ -54,6 +54,7 @@ public class App {
         try {
             String connectionUrl = String.format("jdbc:singlestore://%s:%s/%s", HOSTNAME, PORT, DATABASE);
             Connection conn = DriverManager.getConnection(connectionUrl, USER, PASSWORD);
+
             /*
              * 2. Get embedding for similar query string
              */
